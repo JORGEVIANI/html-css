@@ -10,4 +10,16 @@ html {
 
 body {
     font-size: 1.6rem;
+    background: #202124;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+nav .gmail_imagenes {
+    display: inline-flex;
+
 }
