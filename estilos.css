@@ -16,10 +16,61 @@ body {
 nav {
     display: flex;
     align-items: center;
-    padding: 6px;
+    justify-content: end;
+    padding: 0.6rem;
+    
+}
+
+nav .nav__links {
+    display: flex;
+    width: 25%;
+    justify-content: end;
+    align-items: center;
+}
+
+nav .nav__links :hover{
+    text-decoration-line: underline;
 }
 
 nav .gmail_imagenes {
     display: inline-flex;
+    font-family: 'Roboto',Arial,sans-serif;
+    font-size: 1.3rem;
+}
 
+nav .nav__links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 0.6rem;
+}
+
+nav .perfil_app {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0.6rem;
+}
+
+nav .perfil_app div :hover{
+    background: #3a3a3c;
+    border-radius: 50%;
+}
+
+nav .perfil_app div{
+    display: inline-flex;
+    height: 4.8rem;
+    width: 4.8rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+}
+
+nav .perfil_app svg {
+    width: 2.4rem;
+    fill:#fff;
+    display: flex;
+}
+
+nav .perfil_app img {
+    border-radius: 50%;
+    display: flex;
 }
