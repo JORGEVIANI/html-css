@@ -11,8 +11,13 @@ html {
 body {
     font-size: 1.6rem;
     background: #202124;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
+/* Header */
 nav {
     display: flex;
     align-items: center;
@@ -23,8 +28,6 @@ nav {
 
 nav .nav__links {
     display: flex;
-    width: 25%;
-    justify-content: end;
     align-items: center;
 }
 
@@ -50,8 +53,8 @@ nav .perfil_app {
     padding: 0 0.6rem;
 }
 
-nav .perfil_app div :hover{
-    background: #3a3a3c;
+nav .perfil_app > div > :hover{
+    background-color: #3a3a3c;
     border-radius: 50%;
 }
 
@@ -64,13 +67,171 @@ nav .perfil_app div{
     padding: 0.6rem;
 }
 
-nav .perfil_app svg {
+nav .perfil_app object {
     width: 2.4rem;
-    fill:#fff;
     display: flex;
+    filter: invert(100%);
 }
 
 nav .perfil_app img {
     border-radius: 50%;
     display: flex;
+}
+
+/* main */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12rem;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main section .main__container_form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+main section .main__container_form form {
+    width: 100%;
+    max-width: 58.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section .main__container_form form label{
+    width: 100%;
+}
+
+main section .main__container_form form .main__container_form_search{
+    width: 100%;
+    height: 4rem;
+    border-radius: 2.4rem;
+    padding: 0 5rem;
+    border: 1px solid #5f6368;
+    position: relative;
+}
+
+main section .main__container_form form .main__container_form_search input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    border: none;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    color: #e8eaed;
+    word-wrap: break-word;
+    outline: none;
+}
+
+main section .main__container_form form .main__container_form_search object{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+}
+
+main section .main__container_form form .main__container_form_search :first-child{
+    filter: invert(68%);
+    left: 2%;
+    top: 25%;
+}
+
+main section .main__container_form form .main__container_form_search :last-child{
+    right: 2%;
+    top: 25%;
+}
+
+main section .main__container_form form .buttons-search{
+    margin-top: 1.8rem;
+}
+
+.boton1 {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 0.4rem;
+    color: #e8eaed;
+    height: 3.6rem;
+    margin: 1rem 0.4rem;
+    padding: 0 1.6rem;
+    font-size: 1.4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+main section .main__container_form form .buttons-search :hover{
+    border: #5f6368 solid 1px;
+}
+
+.boton2 {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 0.4rem;
+    color: #e8eaed;
+    height: 3.6rem;
+    margin: 1rem 0.4rem;
+    padding: 0 1.6rem;
+    font-size: 1.4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+main section .main__container_form form label > :hover{
+    background-color: #323336;
+    border-color: #171717;
+    box-shadow: #171717 0 0 0.6rem;
+}
+
+/* Footer */
+footer {
+    background: #171717;
+}
+
+.footerTitulo {
+    padding: 1.5rem 2rem;
+    border-bottom: 0.1rem solid #3c4043;
+    font-size: 1.5rem;
+    color: #9aa0a6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerContenido {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footerContenido a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #9aa0a6;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.footer1 :hover, .footer2 :hover{
+    text-decoration-line: underline;
+}
+
+@media (max-width: 768px) {
+    .footerContenido {
+        justify-content: space-evenly;
+        flex-flow: wrap;
+    }
+
+    .footerContenido a {
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
 }

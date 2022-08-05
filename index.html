@@ -21,7 +21,7 @@
           <div class="gmail_imagenes">
 
             <a href="#">Gmail</a>
-            <a href="#">Imágenes</a>
+            <a href="#">Images</a>
 
           </div>
 
@@ -29,7 +29,7 @@
             <!-- hamburger e imagen de perfil -->
               <div>
                 <a href="">
-                  <svg class="gb_Ue" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+                  <object type="image/svg+xml" data="/img/apps.svg"></object>
                 </a>
               </div>
 
@@ -57,18 +57,20 @@
             </div>
           </div>
 
-          <div>
+          <div class="main__container_form">
             <form action="">
+              <label for="search">
+                <div class="main__container_form_search">
+                    <object type="image/svg+xml" data="/img/lupa.svg"></object>
+                    <input type="text" id="search">
+                    <object type="image/svg+xml" data="/img/mic.svg"></object>
+                  </div>
+              </label>
+              
 
-              <div>
-                <div></div>
-                <input type="text">
-                <div></div>
-              </div>
-
-              <div>
-                <input type="submit" value="Buscar con Google">
-                <input type="submit" value="Voy a tener suerte">
+              <div class="buttons-search">
+                <input class="boton1" type="submit" value="Google Search">
+                <input class="boton2" type="submit" value="I'm Feeling Lucky">
               </div>
 
             </form>
@@ -80,22 +82,19 @@
       </main>
   
       <footer>
-        <div>Argentina</div>
-        <div>
-
-          <div>
-            <a href="#">Sobre Google</a>
-            <a href="#">Publicidad</a>
-            <a href="#">Negocios</a>
-            <a href="#">Cómo funciona la Búsqueda</a>
-          </div>
-
-          <div>
-            <a href="#">Privacidad</a>
-            <a href="#">Condiciones</a>
-            <a href="#">Preferencias</a>
-          </div>
-
+        <p class="footerTitulo">Argentina</p>
+        <div class="footerContenido">
+            <div class="footer1">
+                <a href="">About</a>
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How to search</a>
+            </div>
+            <div class="footer2">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
+            </div>
         </div>
       </footer>
 </body>
