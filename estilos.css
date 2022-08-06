@@ -31,7 +31,7 @@ nav .nav__links {
     align-items: center;
 }
 
-nav .nav__links :hover{
+nav .nav__links .gmail_imagenes :hover{
     text-decoration-line: underline;
 }
 
