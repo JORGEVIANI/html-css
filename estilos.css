@@ -235,3 +235,20 @@ footer .footerContenido a {
         flex-wrap: nowrap;
     }
 }
+
+@media (max-width: 480px) {
+    
+    .footerContenido {
+        justify-content: center;
+        flex-flow: wrap;
+    }
+
+    .footer1, .footer2 {
+        text-align: center;
+    }
+
+    .footerContenido a {
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+}
